@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* ADDING OUR OWN FONTS*/
+@font-face {
+    font-family: 'SK-Modernist-Mono';
+    src: url(fonts/Sk-Modernist-Mono.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'SK-Modernist-Bold';
+    font-weight: bold;
+    src: url(fonts/Sk-Modernist-Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Aeonik-Regular';
+    src: url(fonts/Aeonik-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Magilio';
+    src: url(fonts/MagilioRegular.ttf) format("truetype");
+    
+}
+
+@font-face {
+    font-family: 'Halyard Display Book';
+    src: url(fonts/Halyard-Display-Book.ttf) format("truetype");
+   
+}
+
+/*navigation box*/
+nav{
+    
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: 1s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*logo(left) part of the nav box*/
+nav #middle{
+    width: 33%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/*menu(right) part of the nav box*/
+nav #rgt1, #lft{
+    width: 33%;
+    font-family:'Halyard Display';
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+#rgt1{
+    margin-right: 40px;
+}
+
+#lft{
+    margin-left: 40px;
+}
+
+#lft a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.sticky{
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+}
+
+/*  
+    navigation link animation  
+    code from:https://github.com/kevin-powell/fun-with-transforms-and-transform-origin/blob/master/css/main.css  
+    lines: 7-35
+*/
+.fancy-link {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .fancy-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  }
+  
+  .fancy-link:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+
+
+
+/*text edditing for the menu*/
+nav #rgt1 a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Events headline design*/
+.headline{
+    padding-top: 200px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 120px;
+}
+
+.headline h1{
+    font-weight: normal;
+    font-family: 'Magilio';
+    text-align:center;
+    font-size: 6vw;
+}
+
+.headline p{
+    font-family: 'Halyard Display Book';
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+/*first event design*/
+.box{
+    
+    width: 100%;
+    display: flex;
+    
+}
+
+.imagesection{
+    width: 50%;
+    object-fit: contain;
+}
+
+.box img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.textsection{
+    background-color: #EFEFEF;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box p,.box h1,.bt{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box p, h1{
+    font-family: 'Halyard Display'
+}
+
+.box h1{
+    font-weight: normal;
+    font-size: 3vw;
+}
+
+.box p{
+    font-size: 2vw;
+}
+
+.description p{
+    font-family: 'Halyard Display Book';
+}
+
+.bt{
+    padding-top: 30px;
+}
+
+.bt button{
+    font-size: 1.2vw;
+}
+
+.textsection button{
+    border-radius: 20px;
+    font-family:'Halyard Display';
+    color:white ;
+    border-style: solid;
+    border-color:#7FA285; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:#7FA285 ;
+    width: 20%;
+}
+
+.textsection button:hover{
+    color:#7FA285;
+    background-color:white ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+/*second green event*/
+.textsectiong{
+    color: #EAE9E5;
+    background-color: #7FA285;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textsectiong button{
+    font-family:'Halyard Display';
+    color:#EAE9E5;
+    border-style: solid;
+    border-color:#EAE9E5; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    background-color:#7FA285 ;
+    width: 20%;
+}
+
+.textsectiong button:hover{
+    color:#7FA285;
+    background-color:#EAE9E5 ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*fade in animation*/
+.fade-in{
+    
+    overflow-y: hidden;
+    opacity: 0;
+    position: relative;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.fade-in.appear{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/*footer*/
+footer{
+    
+    padding: 50px;
+    font-family: 'Halyard Display Book';
+    color: #EAE9E5;
+   
+   
+    
+    background-color: #7FA285;
+    text-decoration: none;
+}
+
+footer h1{
+    font-weight: normal;
+}
+
+.bigfooter{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    
+    align-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #EAE9E5;
+}
+
+.aboutus{
+    width: 40%;
+}
+
+.help{
+    padding-left: 150px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socialmedia{
+    width: 30%;
+    display: flex;
+    padding-left: 150px;
+    flex-direction: column;
+}
+
+.osm{
+   
+    display: flex;
+    align-items: center;
+    
+    padding-bottom: 5px;
+    
+}
+
+.osm p{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}

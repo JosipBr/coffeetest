@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Connecting_Grounds_Blog.css">
+    <link rel="stylesheet" href="https://use.typekit.net/esl4dht.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Grounds Blog</title>
+</head>
+<body>
+    <!--navigation bar-->
+    <nav id="navbar">
+        <div id="lft">
+            <a href="#shop" class="fancy-link">Shop</a>
+            <a href="#resources" class="fancy-link">Resources</a>
+            <a href="Connecting_Grounds_Blog.html" class="fancy-link">Blog</a>
+        </div>
+
+            
+        <div id="middle">
+            <a id="logo1" href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <!--<a id="logo2" href="index.html"><img src="images/logo2.png" alt="logo"></a>-->
+        </div>
+    
+        <div id="rgt1">
+            <a href="Connecting_Grounds_Events.html" class="fancy-link">Events</a>
+            <a href="#aboutus" class="fancy-link">About us</a>
+            <a href="#contact" class="fancy-link">Contact</a>
+        </div>
+        <!--<div id="rgt2">
+            <a id="burger" href="#mobilenav"><img src="images/burger.png" alt="burger"></a>
+        </div>-->
+    </nav>
+
+
+<!--Event title part-->
+<section class="headline">
+    <h1>Blog</h1>
+    <p>Are you interested in finding more about upcycled coffee, tips & tricks, and so many more exciting things? Scroll down and read articles from our blog.</p>
+</section>
+
+<!--Filters and a searchbar-->
+<section class="filterandsearch">
+    
+<section class="filtercontainer">
+    <p>Filters:</p>
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('Tips&Tricks')"> Tips&Tricks</button>
+    <button class="btn" onclick="filterSelection('Health')"> Health</button>
+    <button class="btn" onclick="filterSelection('Food')"> Food</button>
+    <button class="btn" onclick="filterSelection('Vegan')"> Vegan</button>
+    <button class="btn" onclick="filterSelection('DIY')"> DIY</button>
+</section>
+<section class="searchbox">
+        <input type="text " id="searchbar" onkeyup="myFunction()" placeholder="Search...">
+</section>
+</section>
+
+<!--blog post containers-->
+<section class="box filterDiv DIY all">
+    <section class="textsection">
+        <h1 class="title">Body scrub recipe</h1>
+        <p>August 2021, Caroline Pedersten, 5 min</p>
+        <section class="description">
+            <p>Have you ever wanted a spa day and realized you don't feel like going out for it?</p>
+            <p>Click on the video to see how to make a diy body scrub at home from spent coffee groundsyou would probably throw away.</p>
+        </section>
+        <section class="bt"><button type="submit">Read full recipe</button></section>
+    </section>
+    <section class="imagesection">
+        <img src="images/video.png" alt="workshop2">
+    </section>
+</section>
+
+<section class="box filterDiv Tips&Tricks all">
+    <section class="textsection">
+        <h1 class="title">How to store coffee grounds</h1>
+        <p>October 2021, Caroline Pedersten, 3 min</p>
+        <section class="description">
+            <p>Do you produce coffee waste however you don’t know how to store it before upcycling it?</p>
+            <p>Check out this article to find out.</p>
+        </section>
+        <section class="bt"><button type="submit">Read more</button></section>
+    </section>
+    <section class="imagesection">
+        <img src="images/store.png" alt="workshop2">
+    </section>
+</section>
+
+<section class="beanjamin filterDiv Health Food Vegan">
+    
+    <p>Don't worry.<br> Beanjamin will make sure that there will be content here for you in the future!</p>
+    <img src="images/been.png" alt="beanjaming">
+</section>
+
+<footer>
+    <section class="bigfooter">
+        <section class="aboutus">
+            <h1>About us</h1>
+            <p>Our mission is to keep the nutritional value of the spent coffee grounds by upcycling it into food products. We want to be a part of sustainable food transition that doesn’t leave any resources behind, in order to secure the future of coffee and protect the environment from degradation.</p>
+        </section>
+        <section class="help">
+            <h1>Help</h1>
+            <a href="#faq">FAQ</a>
+            <a href="#contactus">Contact us</a>
+            <a href="#termsandconditions">Terms and conditions</a>
+        </section>
+        <section class="socialmedia">
+            <h1>Our social media</h1>
+            <section class="osm">
+                <a href="https://www.instagram.com/connectinggrounds/" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="https://www.instagram.com/connectinggrounds/" target="_blank"><p>connectinggrounds</p></a>
+            </section>
+            <section class="osm">
+                <a href="https://www.linkedin.com/company/connecting-grounds/" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.linkedin.com/company/connecting-grounds/" target="_blank"><p>Connecting Grounds</p></a>
+            </section>
+            <section class="osm">
+                <a href="mailto:contact@connecting-grounds.com" target="_blank"><img src="images/mail.png" alt="mail"></a>
+                <a href="mailto:contact@connecting-grounds.com" target="_blank"><p>contact@connecting-grounds.com</p></a>
+            </section>
+        </section>
+    </section>
+    </footer>
+
+
+<script src="Connecting_Grounds_Blog.js"></script>
+
+</body>
